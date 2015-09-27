@@ -1,0 +1,48 @@
+---
+output:
+  html_document:
+    pandoc_args: [
+      "+RTS", "-K64m",
+      "-RTS"
+    ]
+---
+R Technology Workshop
+===
+
+###This is how my RStudio is configured:
+```{r}
+sessionInfo()
+```
+
+###Getting Started - Clone the DV_RProject1 GiT Repository:
+
+I used Git for Windows and executed the following commands:
+
++Clone New Project:
+
+DV_RProject1
+
+
+###Getting Started - Create a .Rprofile file to load libraries when the project is started: 
+
+Create an new file text named .Rprofile.
+
+Put the following into .Rprofile  
+require("ggplot2")
+require("gplots")
+require("grid")
+require("plyr")
+require("RCurl")
+require("reshape2")
+
+###Grammar of Graphics 
+
+plot ::= [coord](http://sape.inf.usi.ch/quick-reference/ggplot2/coord)  [scale+](http://sape.inf.usi.ch/quick-reference/ggplot2/scale) [facet?](http://sape.inf.usi.ch/quick-reference/ggplot2/facet)   [label?](https://www.rstudio.com/wp-content/uploads/2015/08/ggplot2-cheatsheet.pdf)  [theme?](http://docs.ggplot2.org/current/theme.html) layer+  
+layer ::= data [mapping](http://www.cs.utexas.edu/~cannata/dataVis/R%20Cheat%20Sheets/aes.txt) [stat](http://sape.inf.usi.ch/quick-reference/ggplot2/stat) [geom](http://sape.inf.usi.ch/quick-reference/ggplot2/geom) [position?](http://sape.inf.usi.ch/quick-reference/ggplot2/position)  
+
+###Titanic Data Frame
+
+
+
+###New Plot Example - Cabin Layout and Surviving the Titanic
+
